@@ -1,10 +1,14 @@
+/* =======================
+   GLOBAL RESET
+======================= */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
 }
+
 body{
     overflow-x: hidden;
     display: flex;
@@ -12,9 +16,13 @@ body{
     align-items: center;
     flex-direction: column;
 }
+
+/* =======================
+   NAVBAR
+======================= */
 .nav{
     height: 90px;
-    width: 100vw;
+    width: 100%;
     background-color: #ED242E;
     display: flex;
     justify-content: space-between;
@@ -22,34 +30,26 @@ body{
     position: absolute;
     top: 0;
 }
-.nav .nav-menu ul {
+
+.nav .nav-menu ul{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 90px;
-    list-style-type: none;
+    list-style: none;
 }
+
 .nav .nav-menu li a{
     text-decoration: none;
     font-size: 20px;
     color: white;
 }
+
 .nav .nav-menu li a:hover{
     color: black;
 }
-.nav-search{
-    height: 90px;
-    width: 90px;
-    background-color: #00132B;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.covido-logo{
-   position: absolute;
-   top: 60px;
-   left: 730px;
-}
+
+.nav-search,
 .nav-user{
     height: 90px;
     width: 90px;
@@ -58,314 +58,259 @@ body{
     justify-content: center;
     align-items: center;
 }
+
+.covido-logo{
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* =======================
+   SPACE
+======================= */
 .space-coronavirus-nav{
     height: 200px;
-    width: 100vw;
+    width: 100%;
     background-color: #fff;
 }
+
+/* =======================
+   CASES SECTION
+======================= */
 .coronavirus-cases{
-    height: auto;
     width: 100%;
     display: flex;
-    justify-content: end;
-    align-items: center;
     flex-direction: column;
-    color: #666666 ;
+    align-items: center;
+    color: #666;
     padding-top: 80px;
-    position: relative;
 }
+
 .coronavirus-cases h1{
-        font-size: 40px;
-        color:#353D47 ;
+    font-size: 40px;
+    color:#353D47;
 }
+
 .coronavirus-cases p{
     padding-bottom: 40px;
-    color: #666666 ;
 }
+
 .coronavirus-cases-container{
-    height: 650px;
     width: 100%;
-    padding-top: 10px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-  background-color: #FEFEFE;
+    flex-wrap: wrap;
+    padding: 40px 0;
 }
+
 .coronavirus-cases-container-case{
-    height: 570px;
     width: 450px;
     background-color: #fff;
-    box-shadow: 3px 0 62px rgba(13, 3, 3, 0.18); 
+    box-shadow: 3px 0 62px rgba(13, 3, 3, 0.18);
     display: flex;
-    justify-content: start;
-    align-items: center;
     flex-direction: column;
-}
-.photos-case1-button button {
-    height: 50px;
-    width: 150px;
-    font-size: 17px;
-    background-color: #05254D;
-    color:#fff ;
-    margin-top: 65px;
-    display: flex;
-    justify-content: center;
     align-items: center;
-     text-decoration: none;
-     cursor: pointer;
-     border: none;
-     position: absolute;
-     top: 300px;
-     left: 190px;
+    padding-bottom: 40px;
+    position: relative;
 }
-.photos-case1-button button:hover{
-    background-color: #ED242E;
-    transition: ease-in-out 0.8s;
-   }
-.photos-cases2-button button {
-    height: 50px;
-    width: 150px;
-    font-size: 17px;
-    background-color: #05254D;
-    color:#fff ;
-    margin-top: 65px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-     text-decoration: none;
-     cursor: pointer;
-     border: none;
-     position: absolute;
-     top: 300px;
-     left: 690px;
-}
-.photos-cases2-button button:hover{
-    background-color: #ED242E;
-    transition: ease-in-out 0.8s;
-   }
-.photos-cases3-button button {
-    height: 50px;
-    width: 150px;
-    font-size: 17px;
-    background-color: #05254D;
-    color:#fff ;
-    margin-top: 65px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-     text-decoration: none;
-     cursor: pointer;
-     border: none;
-     position: absolute;
-     top: 300px;
-     right: 190px;
-}
-.photos-cases3-button  button:hover{
-    background-color: #ED242E;
-    transition: ease-in-out 0.8s;
-   }
-.coronavirus-cases-container-case img{
-    height: 270px;
-    width: 400px;
-    padding-top: 25px;
-}
-.coronavirus-cases-container-case span{
-    width: 390px;
-    padding-top: 20px;
-    color: #666666 ;
 
+.coronavirus-cases-container-case img{
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
 }
+
 .coronavirus-cases-container-case h1{
     font-size: 32px;
-    padding-top: 29px;
+    padding-top: 20px;
 }
-.coronavirus-cases-container-case .corona-icon{
-    height: 100px;
-    width: 100px;
-    object-fit: contain;
-    position: absolute;
-   bottom: 0;
+
+.coronavirus-cases-container-case span{
+    width: 90%;
+    padding-top: 20px;
 }
+
+.coronavirus-cases-container-case button{
+    height: 50px;
+    width: 150px;
+    background-color: #05254D;
+    color: white;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.coronavirus-cases-container-case button:hover{
+    background-color: #ED242E;
+    transition: 0.5s;
+}
+
+/* =======================
+   DOCTOR SECTION
+======================= */
 .doctor-says{
-    height: auto;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    text-align: center;
 }
+
 .doctor-says h1{
     font-size: 50px;
-    color:#353D47 ;
-    padding-top: 40px;
-    padding-bottom: 30px;
+    color:#353D47;
+    padding: 40px 0;
 }
+
 .about-doctors{
-    height: 500px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
-    position: relative;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
 }
+
 .about-doctor-data{
-    height: 400px;
     width: 550px;
     background-color: white;
+    box-shadow: 3px 0 62px rgba(13, 3, 3, 0.18);
     display: flex;
-    justify-content: start;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
+    padding: 80px 20px 40px;
     position: relative;
-    box-shadow: 3px 0 62px rgba(13, 3, 3, 0.18); 
 }
+
 .about-doctor-data span{
-    width: 500px; 
-    color: #666666 ;
-    padding-top: 30px;
+    width: 100%;
+    color: #666;
+    padding-top: 20px;
 }
+
 .about-doctor-data h2{
     font-size: 30px;
-    color:#353D47 ;
-    padding-top: 100px;
+    color:#353D47;
 }
-.about-doctor-data-do{
-    padding-top: 50px;
-}
+
 .about-doctor-data-doctor-img img{
     border-radius: 50%;
     position: absolute;
     top: -55px;
-    left: 230px;
-    box-shadow: 3px 0 62px rgba(13, 3, 3, 0.18); 
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 3px 0 62px rgba(13, 3, 3, 0.18);
 }
-.footer{
-    height: 400px;
-    width: 100%;
-    background-color: #111111;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    padding-top: 100px;
-}
-.footer-section{
-    height: 350px;
-    width: 200px;
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    flex-direction: column;
-    gap: 10px;
-}
-.footer-section2{
-    height: 350px;
-    width: 300px;
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    gap: 15px;
-    flex-direction: column;
-}
-.footer-section3{
-    height: 350px;
-    width: 350px;
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    gap: 40px;
-    flex-direction: column;
-}
-.footer-section1{
-    height: 350px;
-    width: 320px;
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    gap: 10px;
-    flex-direction: column;
-}
-.footer-section h2{
-color: white;
-}
-.footer-section span{
-    color: #666666;
-    font-size: 20px;
-}
-.footer-section span a{
-    color: #666666;
-    text-decoration: none;
-}
-.footer-section1 h2{
-color: white;
-}
-.footer-section1 span{
-color: white;
-font-weight: 400;
-font-size: 20px;
-}
-.footer-section2 h2{
-color: white;
-}
-.footer-section2 span{
-color: white;
-font-weight: 400;
-font-size: 20px;
-}
-.footer-section2 p{
-color: white;
-font-weight: 400;
-}
-.footer-section3 h2{
-color: white;
-}
-.footer-section3 span{
-color: white;
-}
-.footer-section2  .marker{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    color: white;
-    font-weight: 600;
-    font-size: 20px;
-}
-.footer-section2 .phone{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    color: white;
-    font-weight: 600;
-    font-size: 20px;
-}
-.copyright{
-    height: 80PX;
-    width: 50%;
-    display: flex;
-    background-color: #111111;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    border-top: 1px solid #fff;
-}
-.copyright a{
-    text-decoration: none;
-    color: #fff ;
-}
+
+/* =======================
+   FOOTER
+======================= */
 .footer-main{
-    height: auto;
     width: 100%;
+    background-color: #111;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+}
+
+.footer-section,
+.footer-section1,
+.footer-section2,
+.footer-section3{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer h2{
+    color: white;
+}
+
+.footer span,
+.footer p,
+.footer a{
+    color: #aaa;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.copyright{
+    width: 100%;
+    height: 80px;
+    background-color: #111;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background-color: #111111;
+    border-top: 1px solid white;
 }
-.space-footer-take-action{
-    height: 100px;
-    width: 100vw;
-    background-color: white;
+
+/* =======================
+   MOBILE RESPONSIVE
+======================= */
+@media (max-width: 600px){
+
+    .nav{
+        flex-direction: column;
+        height: auto;
+        position: static;
+    }
+
+    .nav .nav-menu ul{
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    .nav-search,
+    .nav-user{
+        width: 100%;
+        height: 60px;
+    }
+
+    .coronavirus-cases-container-case{
+        width: 90%;
+    }
+
+    .about-doctor-data{
+        width: 90%;
+    }
+
+    .footer-section,
+    .footer-section1,
+    .footer-section2,
+    .footer-section3{
+        width: 90%;
+    }
+}
+
+/* =======================
+   TABLET RESPONSIVE
+======================= */
+@media (max-width: 992px){
+
+    .nav .nav-menu ul{
+        gap: 40px;
+    }
+
+    .coronavirus-cases-container-case{
+        width: 45%;
+    }
+
+    .about-doctor-data{
+        width: 45%;
+    }
+
+    .footer-section,
+    .footer-section1,
+    .footer-section2,
+    .footer-section3{
+        width: 45%;
+    }
 }
