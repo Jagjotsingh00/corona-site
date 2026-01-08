@@ -58,10 +58,300 @@ body{
     justify-content: center;
     align-items: center;
 }
-.space-coronavirus-nav{
-    height: 200px;
+.container{
+    height: 100vh;
     width: 100vw;
+    background: url(photos/banner.png);
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding-left:230px;
+}
+.container h1{
+    font-size: 110px;
+    color: white;
+}
+.container-buttons{
+    display: flex;
+    gap: 10px;
+    padding-top: 50px;
+}
+.container-buttons button{
+    height: 60px;
+    width: 200px;
+    font-size: 20px;
+    color: #00132B;
+    cursor: pointer;
+    border: none;
+}
+.container-buttons button:hover{
+    background-color: #ED242E;
+    transition: ease-in-out 0.8s;
+    color: white;
+}
+.container-slider-button{
+    height: 80px;
+    width: 80px;
+    background-color: #ED242E;
+    border-radius: 50%;
+    position: absolute;
+    top: 50;
+    left:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.container-slider-button:hover{
     background-color: #fff;
+    transition: ease-in-out 0.8s;
+    color: #ED242E;
+}
+.container-slider-button1:hover{
+    background-color: #fff;
+    transition: ease-in-out 0.8s;
+   color: #ED242E;
+}
+.container-slider-button1{
+    height: 80px;
+    width: 80px;
+    background-color: #ED242E;
+    border-radius: 50%;
+    position: absolute;
+    top: 50;
+    right:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+/* container1 close */
+.about{
+    height: 620px;
+    width: 90%;
+    background-color: #fff;
+    border-radius: 70px;
+   margin-top: -90px;
+    box-shadow: 3px 0 62px rgba(13, 3, 3, 0.18);
+    display: flex;
+}
+.about .about-text{
+    height: 100%;
+    width: 55%;
+    border-top-left-radius: 70px;
+    border-bottom-left-radius: 70px;
+    color:#353D47;
+    font-size: 25px;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 160px;
+    padding-left: 100px;
+}
+.about-text-line{
+    width: 110px;
+    height: 10px;
+    background-color: #ED242E;
+    border-radius: 20px;
+}
+.about-text p{
+    font-size: 17px;
+    padding-top: 30px;
+}
+.about-text button{
+    height: 70px;
+    width: 250px;
+    font-size: 17px;
+    background-color: #05254D;
+    color:#fff ;
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.about-text a{
+    text-decoration: none;
+}
+.about-text button:hover{
+    background-color: #ED242E;
+    transition: ease-in-out 0.8s;
+}
+.about .about-img{
+    height: 100%;
+    width: 45%;
+    border-top-right-radius: 70px;
+    border-bottom-right-radius: 70px;
+    background-image: url(photos/about\ img.png);
+    background-repeat: no-repeat;
+    background-size: 80% , 80%;
+    background-position: center;
+}
+.container1{
+    height: 600px;
+    width: 80%;
+    display: flex;
+    padding-top: 100px;
+}
+.container1-girl-img{
+    height: 100%;
+    width: 55%;
+  
+background-image: url(photos/corona\ girl.png);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: 0 0px ;
+}
+.container1-text{
+    height: 100%;
+    width: 45%; 
+    display: flex;
+    flex-direction: column;
+   padding-left: 100px;
+}
+.container1-text h1{
+    font-size: 45px;
+    color: #353D47;
+}
+.container1-text p{
+    width: 400px;
+    padding-top: 40px;
+}
+.container1-text button{
+    height: 70px;
+    width: 200px;
+    font-size: 17px;
+    background-color: #00132B;
+    color:#fff ;
+    margin-top: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     text-decoration: none;
+     border: none;
+}
+.container1-text a{
+    text-decoration: none;
+}
+.container1-text button:hover{
+    background-color: #ED242E;
+    transition: ease-in-out 0.8s;
+}
+.protact-container{
+height: 100px;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+color: #666666 ;
+}
+.protact-container h1{
+    font-size: 40px;
+    color:#353D47 ;
+}
+.protact-bg{
+    margin-top: 50px;
+    height: 600px;
+    width: 100%;
+    background-image: url(photos/project-bg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+.protact-bg .protact-bg-items{
+    height: 75%;
+    width: 350px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 30px;
+
+}
+.protact-bg-items-text{
+    height: 290px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 30px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+   padding-top: 30px;
+}
+.protact-bg-items-text img{
+    height: 90px;
+    width: 90px;
+    object-fit: contain;
+}
+.protact-bg-items-text span{
+    padding-left: 20px;
+    padding-top:30px;
+}
+.protact-bg-items a button{
+    height: 50px;
+    width: 150px;
+    font-size: 17px;
+    background-color: #05254D;
+    color:#fff ;
+    margin-top: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     text-decoration: none;
+     cursor: pointer;
+     border: none;
+}
+.protact-bg-items a {
+    text-decoration: none;
+}
+.protact-bg-items button:hover{
+ background-color: #ED242E;
+ transition: ease-in-out 0.8s;
+}
+.protact-bg-items-search{
+    height: 80px;
+    width: 80px;
+    background-color: #ED242E;
+    border-radius: 50%;
+    position: absolute;
+    top: 93%;
+   left: 670px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff; 
+}
+.protact-bg-items-search1{
+    height: 80px;
+    width: 80px;
+    background-color: #ED242E;
+    border-radius: 50%;
+    position: absolute;
+    top: 93%;
+    right: 680px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+.protact-bg-items-search:hover{
+    background-color: #05254D;
+    transition: ease-in-out 0.8s;
+}
+.protact-bg-items-search1:hover{
+    background-color:#05254D;
+    transition: ease-in-out 0.8s;
 }
 .coronavirus-cases{
     height: auto;
@@ -240,6 +530,74 @@ body{
     left: 230px;
     box-shadow: 3px 0 62px rgba(13, 3, 3, 0.18); 
 }
+.img-container img{
+ height: 120px;
+ width: 120px;
+ position: absolute;
+top: 80px;
+right: 85px;
+}
+.get-update{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.get-update h1{
+    font-size: 50px;
+    color:#353D47;
+}
+.get-update img{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 150px;
+}           
+.subscribe{
+    height: 335px;
+    width: 100%;
+    background-image: url(photos/ever_bg.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+}
+.subscribe-email {
+    height: 90px;
+    width: 80%;
+    border-radius: 50px;
+    font-size: 28px;
+    background-color: transparent;
+    border:0.6px solid white;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+.subscribe-email::placeholder{
+    color: white;
+    font-size: 25px;
+}
+.subscribe button {
+        height: 80px;
+        width: 350px;
+        font-size: 17px;
+        background-color: #05254D;
+        color:#fff ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border: none;
+        border-radius: 50px;
+}
+.subscribe button:hover{
+    background-color: #ED242E;
+    transition: ease-in-out 0.8s;
+}
+/* footer start */
 .footer{
     height: 400px;
     width: 100%;
@@ -249,6 +607,7 @@ body{
     align-items: center;
     gap: 30px;
     padding-top: 100px;
+
 }
 .footer-section{
     height: 350px;
@@ -364,8 +723,4 @@ color: white;
     flex-direction: column;
     background-color: #111111;
 }
-.space-footer-take-action{
-    height: 100px;
-    width: 100vw;
-    background-color: white;
-}
+ 
